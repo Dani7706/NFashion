@@ -1,0 +1,29 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: $default-font-size;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-primary-dark;
+  position: relative;
+}
+.heading-primary {
+  font-size: $heading-1-font-size;
+  font-weight: 700;
+  color: $color-primary-dark;
+  font-family: "Merryweather", serif;
+  text-align: center;
+}
+.heading-secondary {
+  font-size: 5.6rem;
+  font-weight: 700;
+  color: $color-primary-dark;
+  font-family: "Merryweather", serif;
+}
+.heading-tertiary {
+  font-size: $heading-3-font-size;
+  // font-weight: 700;
+  color: $color-primary-dark;
+}
+.heading-4 {
+  font-size: $big-font-size;
+}

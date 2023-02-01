@@ -1,0 +1,39 @@
+.footer {
+  grid-column: full-start/full-end;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, min-content);
+  row-gap: 3rem;
+  align-items: center;
+  justify-items: center;
+  padding: 5rem 0;
+  background-color: $color-grey-dark;
+  color: $color-primary-lighter;
+  &__link {
+    color: inherit;
+  }
+  &__logo {
+    color: $color-primary-lighter;
+  }
+  &__list {
+    display: flex;
+    gap: 3rem;
+    @media only screen and (max-width: 25em) {
+      flex-direction: column;
+    }
+  }
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+
+      transition: all 0.2s;
+    }
+    &:hover,
+    &:active {
+      transform: scale(1.1);
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    }
+  }
+}

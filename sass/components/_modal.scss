@@ -1,0 +1,126 @@
+.modal {
+  &__shopping-cart {
+    display: none;
+    position: fixed;
+    top: 5%;
+    right: 8%;
+
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-lighter, 0.8),
+      rgba($color-primary-dark-1, 0.8)
+    );
+    z-index: 100;
+    border-radius: 5px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 5rem 2rem 2rem 2rem;
+    position: relative;
+  }
+  &__btns {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    gap: 1rem;
+    color: $color-primary-light;
+  }
+  &__profile {
+    display: none;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-lighter, 0.8),
+      rgba($color-primary-dark-1, 0.8)
+    );
+    z-index: 100;
+    border-radius: 5px;
+  }
+}
+.item {
+  &__box {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+  }
+  &__img {
+    width: 10rem;
+    height: 15rem;
+    border-radius: 5px;
+  }
+  &__delete {
+    width: 3rem;
+    height: 3rem;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-lighter, 0.5),
+      rgba($color-primary-dark-1, 0.5)
+    );
+    border: none;
+    border-radius: 100px;
+    transition: all 0.5s;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+      box-shadow: 0 1rem 3rem rgba($color-primary-dark-1, 0.5);
+    }
+  }
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: $color-primary-dark;
+  }
+  &__price {
+    font-size: $big-font-size;
+  }
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+  &__sum {
+    font-size: $big-font-size;
+    font-weight: 500;
+  }
+}
+.btn {
+  &--cart,
+  &--finish {
+    transition: all 0.5s;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 2rem;
+    backface-visibility: hidden;
+    border-radius: 5px;
+  }
+  &--cart {
+    background-color: $color-primary-dark-2;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 1rem 3rem rgba($color-primary-dark-1, 0.5);
+    }
+  }
+  &--finish {
+    background-color: $color-primary-dark-3;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 1rem 3rem rgba($color-primary-dark-1, 0.5);
+    }
+  }
+}
+.close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  fill: $color-primary-dark;
+  transition: all 0.5s;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}

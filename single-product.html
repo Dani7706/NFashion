@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>NFashion</title>
+  </head>
+  <body>
+    <div class="mobile hidden" id="nav-list">
+      <div class="mobile__background hidden">&nbsp;</div>
+      <div class="mobile__nav">
+        <ul class="mobile__list">
+          <li class="mobile__item">
+            <a href="#" class="mobile__link">
+              <svg class="mobile__icon">
+                <use xlink:href="img/sprite.svg#icon-female"></use>
+              </svg>
+              Women</a
+            >
+          </li>
+          <li class="mobile__item">
+            <a href="#" class="mobile__link">
+              <svg class="mobile__icon">
+                <use xlink:href="img/sprite.svg#icon-male"></use>
+              </svg>
+              Men</a
+            >
+          </li>
+          <li class="mobile__item">
+            <a href="#" class="mobile__link">
+              <svg class="mobile__icon">
+                <use xlink:href="img/sprite.svg#icon-child"></use>
+              </svg>
+              Children</a
+            >
+          </li>
+          <li class="mobile__item">
+            <a href="#" class="mobile__link">
+              <svg class="mobile__icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              Special</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__logo-box">
+        <a href="index.html" class="header__logo-link"
+          ><img src="img/NFashion.svg" alt="Logo" class="header__logo"
+        /></a>
+      </div>
+      <form action="#" class="search">
+        <input type="text" class="search__input" placeholder="Search" />
+        <button class="search__button">
+          <svg class="search__icon">
+            <use xlink:href="img/sprite.svg#icon-search"></use>
+          </svg>
+        </button>
+      </form>
+      <nav class="nav__box">
+        <a class="nav__mobile" id="mobile">
+          <svg class="nav__icon--bar">
+            <use xlink:href="img/sprite.svg#icon-bars"></use>
+          </svg>
+        </a>
+
+        <ul class="nav__list" id="nav-list">
+          <li class="nav__item">
+            <a href="all.html" class="nav__link">
+              <svg class="nav__icon">
+                <use xlink:href="img/sprite.svg#icon-female"></use>
+              </svg>
+              Women</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="all.html" class="nav__link">
+              <svg class="nav__icon">
+                <use xlink:href="img/sprite.svg#icon-male"></use>
+              </svg>
+              Men</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="all.html" class="nav__link">
+              <svg class="nav__icon">
+                <use xlink:href="img/sprite.svg#icon-child"></use>
+              </svg>
+              Children</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="all.html" class="nav__link">
+              <svg class="nav__icon">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              Special</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="user-box">
+        <ul class="user__list">
+          <li class="user__item">
+            <a href="#" class="nav__link">
+              <svg class="nav__icon">
+                <use xlink:href="img/sprite.svg#icon-heart-o"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="user__item">
+            <a href="#" class="nav__link">
+              <svg class="nav__icon">
+                <use xlink:href="img/sprite.svg#icon-shopping-basket"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="user__item">
+            <a href="#" class="nav__link">
+              <svg class="nav__icon">
+                <use xlink:href="img/sprite.svg#icon-user"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="container single-product">
+        <div class="product">
+          <div class="product__photos">
+            <button class="btn--direction">
+              <svg class="btn__icon">
+                <use xlink:href="img/sprite.svg#icon-chevron-up"></use>
+              </svg>
+            </button>
+            <div class="product__images">
+              <img
+                src="img/elegant summer suit.jpg"
+                alt=""
+                class="product__img--add"
+              />
+              <img
+                src="img/elegant summer suit.jpg"
+                alt=""
+                class="product__img--add"
+              />
+              <img
+                src="img/elegant summer suit.jpg"
+                alt=""
+                class="product__img--add"
+              />
+            </div>
+            <button class="btn--direction">
+              <svg class="btn__icon">
+                <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="product__photo">
+            <img
+              src="img/elegant summer suit.jpg"
+              alt=""
+              class="product__img"
+            />
+          </div>
+          <div class="product__info">
+            <h3 class="heading-tertiary">Elegant summer suit</h3>
+            <p>
+              <span class="product__info-span">Category: </span>
+              <a href="#" class="product__category">Woman</a>
+            </p>
+
+            <p class="product__description">
+              <span class="product__info-span"> Description: </span>Comfortable
+              and extremely elegant summer suit. Perfect for coffee with friends
+              or an official meeting.
+            </p>
+            <p>
+              <span class="product__info-span">Material: </span>
+              <span class="product__material">80% silk, 20% polyester</span>
+            </p>
+            <p>
+              <span class="product__info-span"> Model size: </span>
+              heigth: 1,75cm, bust: 82 cm, waist: 60 cm, hips: 90 cm, size:
+              S/36.
+            </p>
+            <p class="sizes">
+              <span class="product__info-span">Available sizes: </span
+              ><span class="product__size">S</span>
+              <span class="product__size">M</span>
+              <span class="product__size">L</span>
+              <span class="product__size">XL</span>
+            </p>
+            <div class="product__order">
+              <p class="product__price">125$</p>
+              <div class="product__icons">
+                <svg class="product__icon">
+                  <use xlink:href="img/sprite.svg#icon-heart-o"></use>
+                </svg>
+                <svg class="product__icon">
+                  <use xlink:href="img/sprite.svg#icon-shopping-cart"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container similar">
+        <div class="container__heading">
+          <h1 class="heading-primary">More like this</h1>
+        </div>
+        <div class="container__card">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <img src="img/orange dress.jpg" alt="" class="card__img" />
+            </div>
+            <div class="card__side card__side--back">
+              <h3 class="heading-tertiary">Beautiful summer dress</h3>
+              <a href="#" class="card__category">Woman</a>
+              <span class="card__price"> 75$ </span>
+              <a href="#" class="card__link">See more &rarr;</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__side card__side--front">
+              <img src="img/brown shoes.jpg" alt="" class="card__img" />
+            </div>
+            <div class="card__side card__side--back">
+              <h3 class="heading-tertiary">Comfortable brown shoes</h3>
+              <a href="#" class="card__category">Woman</a>
+              <span class="card__price"> 120$ </span>
+              <a href="#" class="card__link">See more &rarr;</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__side card__side--front">
+              <img src="img/woman shirt.jpg" alt="" class="card__img" />
+            </div>
+            <div class="card__side card__side--back">
+              <h3 class="heading-tertiary">Elegant shirt</h3>
+              <a href="#" class="card__category">Woman</a>
+              <span class="card__price"> 70$ </span>
+              <a href="#" class="card__link">See more &rarr;</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__side card__side--front">
+              <img
+                src="img/unique silver woman bag.jpg"
+                alt=""
+                class="card__img"
+              />
+            </div>
+            <div class="card__side card__side--back">
+              <h3 class="heading-tertiary">Uniqie silver bag</h3>
+              <a href="#" class="card__category">Woman</a>
+              <span class="card__price"> 80$ </span>
+              <a href="#" class="card__link">See more &rarr;</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__side card__side--front">
+              <img src="img/leather man jacket.jpg" alt="" class="card__img" />
+            </div>
+            <div class="card__side card__side--back">
+              <h3 class="heading-tertiary">Comfortable leather jacket</h3>
+              <a href="#" class="card__category">Man</a>
+              <span class="card__price"> 230$. </span>
+              <a href="#" class="card__link">See more &rarr;</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__side card__side--front">
+              <img
+                src="img/dom-hill-nimElTcTNyY-unsplash.jpg"
+                alt=""
+                class="card__img"
+              />
+            </div>
+            <div class="card__side card__side--back">
+              <h3 class="heading-tertiary">Sexy yellow top</h3>
+              <a href="#" class="card__category">Woman</a>
+              <span class="card__price"> 80$ </span>
+              <a href="#" class="card__link">See more &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <a href="#" class="footer__logo-link">
+          <img src="img/NFashion-light.svg" alt="Logo" class="footer__logo" />
+        </a>
+      </div>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">About us</a>
+        </li>
+        <li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Delivery and payment</a>
+        </li>
+        <li class="footer__item"><a href="#" class="footer__link">Sizes</a></li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Contact</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

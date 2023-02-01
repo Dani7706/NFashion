@@ -1,0 +1,15 @@
+.sort {
+  padding: 1.5rem 2rem;
+  background-color: $color-primary-light;
+  color: $color-primary-dark;
+  border: none;
+  border-radius: 5px;
+  font-size: $default-font-size;
+  & * {
+    padding: 2rem;
+    border-radius: 50%;
+  }
+  &__option {
+    margin-bottom: 2rem;
+  }
+}

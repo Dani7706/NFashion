@@ -1,0 +1,64 @@
+.header {
+  display: grid;
+  // grid-template-columns: 10rem minmax(40rem, 50%) repeat(2, 1fr);
+  grid-template-columns: 10rem repeat(2, min-content);
+  grid-gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: $color-primary-lighter;
+  padding-bottom: 0.58rem;
+  box-shadow: 0.5rem 1rem 1.5rem $color-primary-dark;
+  @media only screen and (max-width: 56.25em) {
+    grid-template-columns: 10rem 1fr min-content;
+  }
+  //   &__box {
+  //   }
+  &__logo-box {
+    // width: 10rem;
+    justify-self: flex-start;
+
+    border: 1px solid #4c2606;
+    padding: 1rem;
+    border-radius: 50%;
+    text-align: center;
+  }
+  &__logo-link {
+    &:link,
+    &:visited {
+      height: 100%;
+    }
+  }
+  &__logo {
+    width: 70%;
+    height: 70%;
+    // border-radius: 10rem;
+    // background-color: $color-primary;
+    box-shadow: 20rem 20rem 30rem $color-black;
+    // height: 5rem;
+    // border-radius: 50%;
+    // transform: scale(3);
+  }
+}
+.user {
+  &-box {
+    justify-self: end;
+  }
+  &__list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+  &__item {
+    padding: 0.5rem;
+  }
+}

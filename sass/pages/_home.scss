@@ -1,0 +1,70 @@
+.hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+  height: 85vh;
+  margin-top: 5rem;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../img/collage4.jpg);
+  position: relative;
+  backface-visibility: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  &__description {
+    width: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    // @include center;
+  }
+  &__heading {
+    width: 100%;
+    font-size: 5.6rem;
+    font-weight: 700;
+    color: $color-primary-dark;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1.5rem;
+    &--main {
+      display: block;
+
+      // text-transform: uppercase;
+      animation: moveInLeft 5s ease-out;
+      font-family: "Merriweather", serif;
+    }
+
+    &--logo {
+      font-family: "Merriweather", serif;
+      font-weight: 700;
+      display: block;
+      animation: moveInRight 5s ease-out;
+    }
+  }
+}
+.most {
+  margin-top: -15%;
+  overflow: hidden;
+  background-color: $color-primary-lighter2;
+  padding: 25vw 0 25rem 0;
+}
+.newest {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary-light, 0.8),
+    rgba($color-primary-dark, 0.8)
+  );
+  padding: 15rem 0 20rem 0;
+  transform: skewY(-5deg);
+  margin-top: -7rem;
+  & > * {
+    transform: skewY(5deg);
+  }
+}

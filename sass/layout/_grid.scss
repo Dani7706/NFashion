@@ -1,0 +1,17 @@
+.row {
+  max-width: $default-grid;
+  margin: 0 auto;
+  overflow: hidden;
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+}
+[class^="col-"] {
+  float: left;
+  &:not(:last-child) {
+    margin-right: $gutter-horizontal;
+  }
+}
+.col-1-of-5 {
+  width: calc((100% - #{$gutter-horizontal}* 4) / 5);
+}
