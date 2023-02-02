@@ -19,7 +19,7 @@
       <div class="mobile__nav">
         <ul class="mobile__list">
           <li class="mobile__item">
-            <a href="#" class="mobile__link">
+            <a href="all.html" class="mobile__link">
               <svg class="mobile__icon">
                 <use xlink:href="img/sprite.svg#icon-female"></use>
               </svg>
@@ -27,7 +27,7 @@
             >
           </li>
           <li class="mobile__item">
-            <a href="#" class="mobile__link">
+            <a href="all.html" class="mobile__link">
               <svg class="mobile__icon">
                 <use xlink:href="img/sprite.svg#icon-male"></use>
               </svg>
@@ -35,7 +35,7 @@
             >
           </li>
           <li class="mobile__item">
-            <a href="#" class="mobile__link">
+            <a href="all.html" class="mobile__link">
               <svg class="mobile__icon">
                 <use xlink:href="img/sprite.svg#icon-child"></use>
               </svg>
@@ -43,7 +43,7 @@
             >
           </li>
           <li class="mobile__item">
-            <a href="#" class="mobile__link">
+            <a href="all.html" class="mobile__link">
               <svg class="mobile__icon">
                 <use xlink:href="img/sprite.svg#icon-star"></use>
               </svg>
@@ -51,6 +51,121 @@
             >
           </li>
         </ul>
+      </div>
+    </div>
+    <div class="modal__shopping-cart">
+      <svg class="close close--cart">
+        <use xlink:href="img/sprite.svg#icon-close"></use>
+      </svg>
+      <div class="modal__content">
+        <div class="item__box">
+          <img
+            src="img/hand-made dress.jpg"
+            alt="Hand-made dress"
+            class="item__img"
+          />
+          <div class="item__description">
+            <h3 class="item__name">Hand-made dress</h3>
+            <div class="item__value">
+
+              <span>Price: </span>
+              <span class="item__price" id="price-1">135</span>$
+            </div>
+            <div class="item__info">
+
+              <button class="btn--qty" id="btn-minus-1">
+                <svg class="item__icon item__icon--minus">
+                  <use xlink:href="img/sprite.svg#icon-minus"></use>
+                </svg>
+              </button>
+              
+              <input type="text" class="item__qty" id="qty-1"></input>
+              <button class="btn--qty" id="btn-plus-1">
+                <svg class="item__icon item__icon--plus">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="item__value">
+
+              <span>Value: </span>
+              <span class="item__price" id="value-1">135</span>$
+            </div>
+          </div>
+          <button class="item__delete">
+            <svg class="item__icon">
+              <use xlink:href="img/sprite.svg#icon-trash-o"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="item__box">
+          <img
+            src="img/beautifull watch.jpg"
+            alt="Beautiful watch"
+            class="item__img"
+          />
+          <div class="item__description">
+            <h3 class="item__name">Beautiful watch</h3>
+            <div class="item__value">
+
+              <span>Price: </span>
+              <span class="item__price" id="price-2">135</span>$
+            </div>
+            <div class="item__info">
+
+              <button class="btn--qty" id="btn-minus-2">
+                <svg class="item__icon item__icon--minus">
+                  <use xlink:href="img/sprite.svg#icon-minus"></use>
+                </svg>
+              </button>
+              
+              <input type="text" class="item__qty" id="qty-2"></input>
+              <button class="btn--qty" id="btn-plus-2">
+                <svg class="item__icon item__icon--plus">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="item__value">
+
+              <span>Value: </span>
+              <span class="item__price" id="value-2">135</span>$
+            </div>
+          </div>
+          <button class="item__delete">
+            <svg class="item__icon">
+              <use xlink:href="img/sprite.svg#icon-trash-o"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="total">
+          <span>Total: </span>
+          <span class="total__sum" id="total">270</span>
+        </div>
+        <div class="modal__btns">
+          <!-- <div class="btn--cart">Cart details</div> -->
+          <div class="btn--finish">Confirm</div>
+        </div>
+      </div>
+    </div>
+    <div class="modal__profile">
+      <svg class="close close--profile">
+        <use xlink:href="img/sprite.svg#icon-close"></use>
+      </svg>
+      <div class="modal__content">
+        <button class="btn--profile">Profile</button
+        ><button class="btn--profile">Orders</button
+        ><button class="btn--profile">Favorite products</button
+        ><button class="btn--profile">Settings</button
+        ><button class="btn--profile">
+          <a href="index-login.html">
+
+            <svg class="exit__icon">
+              <use xlink:href="img/sprite.svg#icon-sign-out"></use>
+            </svg>
+          </a>
+          Sign out
+        </button>
       </div>
     </div>
     <header class="header">
@@ -119,14 +234,14 @@
             </a>
           </li>
           <li class="user__item">
-            <a href="#" class="nav__link">
+            <a href="#" class="nav__link" id="shop-cart">
               <svg class="nav__icon">
                 <use xlink:href="img/sprite.svg#icon-shopping-basket"></use>
               </svg>
             </a>
           </li>
           <li class="user__item">
-            <a href="#" class="nav__link">
+            <a href="#" class="nav__link" id="user">
               <svg class="nav__icon">
                 <use xlink:href="img/sprite.svg#icon-user"></use>
               </svg>
@@ -170,7 +285,7 @@
           <div class="product__photo">
             <img
               src="img/elegant summer suit.jpg"
-              alt=""
+              alt="Elegant summer suit"
               class="product__img"
             />
           </div>
@@ -178,7 +293,7 @@
             <h3 class="heading-tertiary">Elegant summer suit</h3>
             <p>
               <span class="product__info-span">Category: </span>
-              <a href="#" class="product__category">Woman</a>
+              <a href="all.html" class="product__category">Woman</a>
             </p>
 
             <p class="product__description">
@@ -228,9 +343,9 @@
             </div>
             <div class="card__side card__side--back">
               <h3 class="heading-tertiary">Beautiful summer dress</h3>
-              <a href="#" class="card__category">Woman</a>
+              <a href="all.html" class="card__category">Woman</a>
               <span class="card__price"> 75$ </span>
-              <a href="#" class="card__link">See more &rarr;</a>
+              <a href="single-product.html" class="card__link">See more &rarr;</a>
             </div>
           </div>
           <div class="card">
@@ -239,9 +354,9 @@
             </div>
             <div class="card__side card__side--back">
               <h3 class="heading-tertiary">Comfortable brown shoes</h3>
-              <a href="#" class="card__category">Woman</a>
+              <a href="all.html" class="card__category">Woman</a>
               <span class="card__price"> 120$ </span>
-              <a href="#" class="card__link">See more &rarr;</a>
+              <a href="single-product.html" class="card__link">See more &rarr;</a>
             </div>
           </div>
           <div class="card">
@@ -250,24 +365,24 @@
             </div>
             <div class="card__side card__side--back">
               <h3 class="heading-tertiary">Elegant shirt</h3>
-              <a href="#" class="card__category">Woman</a>
+              <a href="all.html" class="card__category">Woman</a>
               <span class="card__price"> 70$ </span>
-              <a href="#" class="card__link">See more &rarr;</a>
+              <a href="single-product.html" class="card__link">See more &rarr;</a>
             </div>
           </div>
           <div class="card">
             <div class="card__side card__side--front">
               <img
                 src="img/unique silver woman bag.jpg"
-                alt=""
+                alt="Silcer wonam bag"
                 class="card__img"
               />
             </div>
             <div class="card__side card__side--back">
               <h3 class="heading-tertiary">Uniqie silver bag</h3>
-              <a href="#" class="card__category">Woman</a>
+              <a href="all.html" class="card__category">Woman</a>
               <span class="card__price"> 80$ </span>
-              <a href="#" class="card__link">See more &rarr;</a>
+              <a href="single-product.html" class="card__link">See more &rarr;</a>
             </div>
           </div>
           <div class="card">
@@ -276,24 +391,24 @@
             </div>
             <div class="card__side card__side--back">
               <h3 class="heading-tertiary">Comfortable leather jacket</h3>
-              <a href="#" class="card__category">Man</a>
+              <a href="all.html" class="card__category">Man</a>
               <span class="card__price"> 230$. </span>
-              <a href="#" class="card__link">See more &rarr;</a>
+              <a href="single-product.html" class="card__link">See more &rarr;</a>
             </div>
           </div>
           <div class="card">
             <div class="card__side card__side--front">
               <img
                 src="img/dom-hill-nimElTcTNyY-unsplash.jpg"
-                alt=""
+                alt="Yelloy top"
                 class="card__img"
               />
             </div>
             <div class="card__side card__side--back">
               <h3 class="heading-tertiary">Sexy yellow top</h3>
-              <a href="#" class="card__category">Woman</a>
+              <a href="all.html" class="card__category">Woman</a>
               <span class="card__price"> 80$ </span>
-              <a href="#" class="card__link">See more &rarr;</a>
+              <a href="single-product.html" class="card__link">See more &rarr;</a>
             </div>
           </div>
         </div>
@@ -301,7 +416,7 @@
     </main>
     <footer class="footer">
       <div class="footer__logo-box">
-        <a href="#" class="footer__logo-link">
+        <a href="index.html" class="footer__logo-link">
           <img src="img/NFashion-light.svg" alt="Logo" class="footer__logo" />
         </a>
       </div>
@@ -320,6 +435,6 @@
       </ul>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
